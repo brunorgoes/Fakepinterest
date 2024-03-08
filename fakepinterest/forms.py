@@ -26,7 +26,7 @@ class Formcriarconta(FlaskForm):
             raise ValidationError('E-mail já cadastrado, faça login ou utilize outro e-mail!')
 
     def validate_confirmarsenha(self, confirmarsenha):
-        if senha.data != confirmarsenha.data:
+        if self.senha.data != confirmarsenha.data:
             raise ValidationError('senhas divergentes!')
 
 
