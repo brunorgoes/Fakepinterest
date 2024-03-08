@@ -62,13 +62,6 @@
 
           <div class="div-input">
             {{form.confirmarsenha.label(class="label")}}
-              {% if form.confirmarsenha.errors %}
-
-                {% for erro in form.confirmarsenha.errors %}
-                 <p style="color: red">{{erro}}</p>
-                {% endfor %}
-
-              {% endif %}
             {{form.confirmarsenha(class="input")}}
           </div>
 
